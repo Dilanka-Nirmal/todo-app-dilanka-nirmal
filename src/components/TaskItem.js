@@ -32,7 +32,7 @@ const TaskItem = ({ task }) => {
       <TaskHeader>
         <PriorityImage src={getPriorityImage(priority)} alt={`priority`} />
         <Todo>{todo}</Todo>
-        <StatusText completed={completed}>
+        <StatusText $completed={completed}>
           {completed ? 'Done' : 'In-Progress'}
         </StatusText>
         <Date>{formatDate(createdAt)}</Date>
@@ -73,9 +73,12 @@ const Todo = styled.p`
 `;
 
 const StatusText = styled.span`
-  color: ${({ completed }) => (completed ? 'green' : 'orange')};
+  color: ${({ $completed }) => ($completed ? '#219653' : '#F2C94C')};
   font-weight: bold;
   margin-left: 8px;
+  background-color: ${({ $completed }) => ($completed ? '#E8F5E9' : '#F2C94C1A')};
+  padding: 4px 8px;
+  border-radius: 4px;
 `;
 
 const Date = styled.span`

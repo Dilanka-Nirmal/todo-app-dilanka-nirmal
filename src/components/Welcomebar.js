@@ -10,7 +10,7 @@ const Welcomebar = () => {
         <div>
         <h2>Welcome back, John Doe</h2>
         <p>The end of the year is coming. Are you planning your performance interviews? You can do this super efficiently with Acmy.</p>
-        <a href="#">Look here for more information</a>
+        <a href="https://www.betalaunch.io/">Look here for more information</a>
         </div>
         <img src={VectorImg} alt="Vector" className="content-image" />
         <img src={CloseImg} alt="Close" className="close-icon" />

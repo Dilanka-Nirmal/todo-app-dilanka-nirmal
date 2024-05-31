@@ -20,7 +20,7 @@ const ActivityFeed = () => {
         {activities.map(activity => (
           <li key={activity.id}>
             <img src={activity.img} alt={activity.user} />
-            <p><strong>{activity.user}</strong> {activity.action} <a href="#">{activity.task}</a></p>
+            <p><strong>{activity.user}</strong> {activity.action} <a href="https://www.betalaunch.io/">{activity.task}</a></p>
             <small>{activity.date}</small>
           </li>
         ))}
